@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: telegram-bienvenida
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: python main.py
+    envVars:
+      - key: BOT_TOKEN
+        value: TU_TOKEN_DEL_BOT
